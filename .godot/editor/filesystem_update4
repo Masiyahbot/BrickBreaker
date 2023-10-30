@@ -1,6 +1,9 @@
 res://Scenes/main.tscn
 res://ball.tscn
-res://ball.gd
 res://Scenes/paddle.tscn
-res://Scripts/paddle.gd
 res://wall.tscn
+res://death_zone.tscn
+res://death_zone.gd
+res://ball.gd
+res://ui.tscn
+res://Scripts/ui.gd
