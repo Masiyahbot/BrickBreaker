@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://ciiuqpi3fwa3c"]
+[gd_scene load_steps=7 format=3 uid="uid://ciiuqpi3fwa3c"]
 
 [ext_resource type="PackedScene" uid="uid://b7ebpynx4dase" path="res://Scenes/paddle.tscn" id="1_5ieia"]
 [ext_resource type="PackedScene" uid="uid://bickn2dgve6m8" path="res://ui.tscn" id="1_06ouj"]
 [ext_resource type="PackedScene" uid="uid://cvjv2a1hm7gfd" path="res://ball.tscn" id="2_806le"]
 [ext_resource type="PackedScene" uid="uid://cxi6a1f51fa7d" path="res://wall.tscn" id="3_rnhv4"]
 [ext_resource type="PackedScene" uid="uid://c24l67qdd3dsb" path="res://death_zone.tscn" id="4_qb2db"]
+[ext_resource type="Script" path="res://Scenes/BrickSpawner.gd" id="6_5d3up"]
 
 [node name="main" type="Node"]
 
@@ -42,3 +43,9 @@ collision_layer = 4
 
 [node name="DeathZone" parent="." instance=ExtResource("4_qb2db")]
 position = Vector2(-4, 357)
+
+[node name="BrickSpawner" type="Node" parent="."]
+script = ExtResource("6_5d3up")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(2.08165e-12, -172)
