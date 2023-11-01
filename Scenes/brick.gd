@@ -19,7 +19,8 @@ var sprites: Array[Texture2D] = [
 ]
 
 func get_size():
-	return collision_shape_2d.shape.get_rect().size
+	return collision_shape_2d.shape.get_rect().size * sprite_2d.scale
+
 	
 
 func set_level(new_level: int):
