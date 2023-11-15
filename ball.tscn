@@ -1,7 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cvjv2a1hm7gfd"]
+[gd_scene load_steps=7 format=3 uid="uid://cvjv2a1hm7gfd"]
 
 [ext_resource type="Script" path="res://ball.gd" id="1_kogqk"]
 [ext_resource type="Texture2D" uid="uid://c8l7ke1ygg27h" path="res://Assets/Assets/Ball.png" id="2_g310x"]
+[ext_resource type="AudioStream" uid="uid://ctrjtlpqvflu1" path="res://Assets/BrickHit.wav" id="3_ha4c4"]
+[ext_resource type="AudioStream" path="res://Assets/WallHit.wav" id="4_0ku74"]
+[ext_resource type="AudioStream" uid="uid://d08ti33hvwvrn" path="res://Assets/LifeLost.wav" id="5_gov50"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mata0"]
 radius = 30.4631
@@ -16,3 +19,14 @@ texture = ExtResource("2_g310x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_mata0")
+
+[node name="BrickHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ha4c4")
+
+[node name="PaddleHit" type="AudioStreamPlayer" parent="."]
+
+[node name="WallHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_0ku74")
+
+[node name="EndLife" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_gov50")
