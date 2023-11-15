@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1700079613
+::res://::1700079717
 ball.gd::GDScript::-1::1698966124::0::1::::Ball<>CharacterBody2D<>::
 ball.tscn::PackedScene::6266709797355211749::1699572770::0::1::::<><>::res://ball.gd<>uid://c8l7ke1ygg27h
 brick_spawner.gd::GDScript::-1::1699572618::0::1::::BrickSpawner<>Node<>::
@@ -7,9 +7,19 @@ death_zone.gd::GDScript::-1::1698704696::0::1::::DeathZone<>Area2D<>::
 death_zone.tscn::PackedScene::6728532052617788001::1699572770::0::1::::<><>::res://death_zone.gd
 icon.svg::CompressedTexture2D::3957293083198907292::1698186947::1698186979::1::::<><>::
 LevelPassed.wav::AudioStreamWAV::4941964583679455513::1700079613::1700079613::1::::<><>::
+LifeLost.wav::AudioStreamWAV::6350017753006192991::1700079717::1700079717::1::::<><>::
+PaddleHit.mp3::AudioStreamMP3::5887613144082470859::1700079709::1700079709::1::::<><>::
 ui.tscn::PackedScene::2952691996619644197::1699572770::0::1::::<><>::uid://b4pqfbvte11k6
 wall.tscn::PackedScene::6405583394598316427::1699572770::0::1::::<><>::
-::res://Assets/::1698186947
+::res://Assets/::1700079780
+BGM2.wav::AudioStreamWAV::-1::1700079642::1700079642::1::::<><>::
+BrickHit.wav::AudioStreamWAV::6142104803031082406::1700079780::1700079780::1::::<><>::
+GameLost.wav::AudioStreamWAV::-1::1700079642::1700079642::1::::<><>::
+GameWon.wav::AudioStreamWAV::-1::1700079642::1700079642::1::::<><>::
+LevelPassed.wav::AudioStreamWAV::5185804839244687155::1700079758::1700079759::1::::<><>::
+LifeLost.wav::AudioStreamWAV::8983277031383215619::1700079769::1700079769::1::::<><>::
+PaddleHit.mp3::AudioStreamMP3::3627605367145752600::1700079775::1700079775::1::::<><>::
+WallHit.wav::AudioStreamWAV::-1::1700079642::1700079642::1::::<><>::
 ::res://Assets/Assets/::1698186979
 Ball.png::CompressedTexture2D::7113742415800555843::1698186947::1698186979::1::::<><>::
 Brick-Blue.png::CompressedTexture2D::8979348304139843021::1698186947::1698186979::1::::<><>::
