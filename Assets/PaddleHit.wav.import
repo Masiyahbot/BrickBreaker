@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://ccn6o1qaaahdx"
-path="res://.godot/imported/LevelPassed.wav-6746dacfcf703f3cae10be8997efb032.sample"
+uid="uid://c12xmj5kjhite"
+path="res://.godot/imported/PaddleHit.wav-38db13336ed6484735ae993e302251f8.sample"
 
 [deps]
 
-source_file="res://LevelPassed.wav"
-dest_files=["res://.godot/imported/LevelPassed.wav-6746dacfcf703f3cae10be8997efb032.sample"]
+source_file="res://Assets/PaddleHit.wav"
+dest_files=["res://.godot/imported/PaddleHit.wav-38db13336ed6484735ae993e302251f8.sample"]
 
 [params]
 

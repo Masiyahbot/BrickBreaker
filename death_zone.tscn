@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c24l67qdd3dsb"]
+[gd_scene load_steps=4 format=3 uid="uid://c24l67qdd3dsb"]
 
 [ext_resource type="Script" path="res://death_zone.gd" id="1_tg8qf"]
+[ext_resource type="AudioStream" uid="uid://d08ti33hvwvrn" path="res://Assets/LifeLost.wav" id="2_v8hoe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d43fl"]
 size = Vector2(1164, 20)
@@ -10,5 +11,8 @@ script = ExtResource("1_tg8qf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_d43fl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_v8hoe")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

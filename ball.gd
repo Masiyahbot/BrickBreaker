@@ -12,7 +12,6 @@ const VELOCITY_LIMIT = 40
 @export var ui: UI
 
 
-
 var speed_up_factor = 1.05
 var start_position: Vector2
 var last_collider_id 
@@ -33,12 +32,16 @@ func _physics_process(delta):
 	if collider is Brick:
 		collider.decrease_level()
 		
-	if (collider is Brick or collider is Paddle):
+	if (collider is Brick):
 		ball_collision(collider)
+		$BrickHit.play()
+	elif (collider is Paddle):
+		ball_collision(collider)
+		$PaddleHit.play()
 	else:
 		velocity = velocity.bounce(collision.get_normal())
-	
-	
+		$WallHit.play()
+
 func start_ball():
 	position = start_position 
 	randomize()
@@ -53,6 +56,7 @@ func on_life_lost():
 		life_lost.emit()
 		reset_ball()
 		ui.set_lifes(lifes)
+		
 
 func reset_ball(): 
 	position = start_position
