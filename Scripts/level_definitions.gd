@@ -19,4 +19,3 @@ var levels = [level_1, level_2]
 func get_current_level():
 	print(levels[current_level - 1])
 	return levels[current_level - 1]
-
