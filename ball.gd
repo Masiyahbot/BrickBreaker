@@ -22,6 +22,7 @@ func _ready():
 	ui.set_lifes(lifes)
 	start_position = position
 	death_zone.life_lost.connect(on_life_lost)
+	
 
 func _physics_process(delta):
 	var collision = move_and_collide(velocity * ball_speed * delta)

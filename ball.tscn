@@ -28,3 +28,5 @@ stream = ExtResource("5_o04c3")
 
 [node name="BrickHit" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_ha4c4")
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]
