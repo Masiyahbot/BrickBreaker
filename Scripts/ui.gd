@@ -10,16 +10,13 @@ func set_lifes(lifes: int):
 	lifes_label.text = "lifes: %d" % lifes
 
 func game_over():
-	$GameLost.play()
 	game_lost_container.show()
 
 func _on_game_lost_button_pressed():
 	get_tree().reload_current_scene()
  
 func on_level_won():
-	$GameWon.play()
 	level_won_container.show()
-
 	
 
 func _on_level_won_button_pressed():

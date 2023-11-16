@@ -1,9 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bickn2dgve6m8"]
+[gd_scene load_steps=5 format=3 uid="uid://bickn2dgve6m8"]
 
 [ext_resource type="FontFile" uid="uid://b4pqfbvte11k6" path="res://Assets/Assets/VT323-Regular.ttf" id="1_6owsf"]
 [ext_resource type="Script" path="res://Scripts/ui.gd" id="1_jettw"]
-[ext_resource type="AudioStream" uid="uid://b5gnry33yxtf" path="res://Assets/GameWon.wav" id="3_kgte2"]
-[ext_resource type="AudioStream" uid="uid://wteog7wbeowr" path="res://Assets/GameLost.wav" id="4_fhws7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hwsea"]
 bg_color = Color(0.74902, 0.494118, 0.760784, 1)
@@ -101,12 +99,6 @@ vertical_alignment = 1
 [node name="LevelWonButton" type="Button" parent="LevelWonContainer/Panel/VBoxContainer"]
 layout_mode = 2
 text = "GO TO NEXT LEVEL"
-
-[node name="GameWon" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_kgte2")
-
-[node name="GameLost" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_fhws7")
 
 [connection signal="pressed" from="GameLostContainer/Panel/VBoxContainer/GameLostButton" to="." method="_on_game_lost_button_pressed"]
 [connection signal="pressed" from="LevelWonContainer/Panel/VBoxContainer/LevelWonButton" to="." method="_on_level_won_button_pressed"]

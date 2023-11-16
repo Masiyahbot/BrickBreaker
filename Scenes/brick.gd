@@ -44,7 +44,6 @@ func fade_out():
 func destroy():
 	queue_free()
 	brick_destroyed.emit()
-	$game
 	
 func get_width():
 	return get_size().x
