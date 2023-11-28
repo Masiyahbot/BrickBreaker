@@ -1,1 +1,8 @@
+res://Scenes/main.tscn
 res://ball.tscn
+res://Scenes/paddle.tscn
+res://wall.tscn
+res://death_zone.tscn
+res://ui.tscn
+res://Scenes/brick.tscn
+res://particles_2d.tscn

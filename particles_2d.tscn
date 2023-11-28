@@ -9,5 +9,6 @@ orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
 
 [node name="Particles2D" type="GPUParticles2D"]
+amount = 1
 process_material = SubResource("ParticleProcessMaterial_d05pg")
 texture = ExtResource("1_sr7gc")
