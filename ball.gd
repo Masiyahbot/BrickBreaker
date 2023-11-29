@@ -11,7 +11,8 @@ const VELOCITY_LIMIT = 40
 @export var death_zone: DeathZone
 @export var ui: UI
 
-
+@onready var sparkle = $Sparkle
+var sparkle_rotation = 1
 
 var speed_up_factor = 1.05
 var start_position: Vector2

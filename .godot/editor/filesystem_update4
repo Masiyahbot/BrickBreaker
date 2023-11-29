@@ -1,8 +1,12 @@
+res://particles_2d.tscn
 res://Scenes/main.tscn
+res://death_zone.gd
 res://ball.tscn
 res://Scenes/paddle.tscn
 res://wall.tscn
 res://death_zone.tscn
 res://ui.tscn
 res://Scenes/brick.tscn
-res://particles_2d.tscn
+res://ball.gd
+res://sparkle.tscn
+res://death_smoke.tscn

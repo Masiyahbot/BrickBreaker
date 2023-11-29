@@ -1,11 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://ciiuqpi3fwa3c"]
+[gd_scene load_steps=10 format=3 uid="uid://ciiuqpi3fwa3c"]
 
 [ext_resource type="PackedScene" uid="uid://b7ebpynx4dase" path="res://Scenes/paddle.tscn" id="1_5ieia"]
 [ext_resource type="PackedScene" uid="uid://bickn2dgve6m8" path="res://ui.tscn" id="1_06ouj"]
 [ext_resource type="PackedScene" uid="uid://cvjv2a1hm7gfd" path="res://ball.tscn" id="2_806le"]
 [ext_resource type="PackedScene" uid="uid://cxi6a1f51fa7d" path="res://wall.tscn" id="3_rnhv4"]
 [ext_resource type="PackedScene" uid="uid://c24l67qdd3dsb" path="res://death_zone.tscn" id="4_qb2db"]
+[ext_resource type="PackedScene" uid="uid://bi6ypo3u13wca" path="res://sparkle.tscn" id="4_uti23"]
 [ext_resource type="Script" path="res://brick_spawner.gd" id="6_g2x31"]
+[ext_resource type="PackedScene" uid="uid://b7uqa07poutux" path="res://death_smoke.tscn" id="7_cxocg"]
 [ext_resource type="PackedScene" uid="uid://c4cawtvjv0bgv" path="res://Scenes/brick.tscn" id="7_m4xgj"]
 
 [node name="main" type="Node"]
@@ -27,6 +29,10 @@ collision_mask = 14
 death_zone = NodePath("../DeathZone")
 ui = NodePath("../UI")
 
+[node name="Sparkle" parent="Ball" instance=ExtResource("4_uti23")]
+position = Vector2(-8.3266e-12, 28)
+scale = Vector2(4.75698e+07, -4.1e+06)
+
 [node name="Walls" type="Node" parent="."]
 
 [node name="UpperWall" parent="Walls" instance=ExtResource("3_rnhv4")]
@@ -45,6 +51,8 @@ collision_layer = 4
 
 [node name="DeathZone" parent="." instance=ExtResource("4_qb2db")]
 position = Vector2(-4, 357)
+
+[node name="DeathSmoke" parent="DeathZone" instance=ExtResource("7_cxocg")]
 
 [node name="BrickSpawner" type="Node" parent="." node_paths=PackedStringArray("spawn_start")]
 script = ExtResource("6_g2x31")
