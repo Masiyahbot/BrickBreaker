@@ -14,11 +14,15 @@ const VELOCITY_LIMIT = 40
 @onready var sparkle = $Sparkle
 var sparkle_rotation = 1
 
+@onready var brick_explosion = $BrickExplosion
+
 var speed_up_factor = 1.05
 var start_position: Vector2
 var last_collider_id 
 
 @onready var collision_shape_2d = $CollisionShape2D
+
+
 
 func _ready():
 	ui.set_lifes(lifes)
@@ -36,6 +40,7 @@ func _physics_process(delta):
 		
 	if (collider is Brick or collider is Paddle):
 		ball_collision(collider)
+		brick_explosion.emitting = true
 	else:
 		velocity = velocity.bounce(collision.get_normal())
 	

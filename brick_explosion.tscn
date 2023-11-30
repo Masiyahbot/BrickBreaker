@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://bb7d0ilbnl2i3"]
+
+[ext_resource type="Texture2D" uid="uid://b661uklu7bx36" path="res://Assets/smoke_10.png" id="1_1tjys"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ml8aw"]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="Gradient" id="Gradient_km32c"]
+offsets = PackedFloat32Array(0.5, 1)
+colors = PackedColorArray(0.496695, 0.874341, 0.237889, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_xilgq"]
+gradient = SubResource("Gradient_km32c")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_55kci"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+scale_min = 0.2
+scale_max = 0.3
+color = Color(0.701961, 0.788235, 0.462745, 1)
+color_ramp = SubResource("GradientTexture1D_xilgq")
+sub_emitter_mode = 3
+sub_emitter_amount_at_collision = 1
+
+[node name="BrickExplosion" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_ml8aw")
+use_parent_material = true
+position = Vector2(547, 331)
+amount = 1
+process_material = SubResource("ParticleProcessMaterial_55kci")
+texture = ExtResource("1_1tjys")

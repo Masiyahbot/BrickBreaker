@@ -45,5 +45,7 @@ func destroy():
 	queue_free()
 	brick_destroyed.emit()
 	
+	
+	
 func get_width():
 	return get_size().x

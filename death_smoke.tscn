@@ -1,21 +1,34 @@
-[gd_scene load_steps=4 format=3 uid="uid://b7uqa07poutux"]
+[gd_scene load_steps=6 format=3 uid="uid://b7uqa07poutux"]
 
-[ext_resource type="Texture2D" uid="uid://3jlkw4ug5xl1" path="res://Assets/smoke_01.png" id="1_lbnrr"]
+[ext_resource type="Texture2D" uid="uid://ccu1eqn2abtq1" path="res://Assets/flame_02.png" id="1_gn1va"]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_x4wya"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_i0jrs"]
+blend_mode = 4
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 2
+particles_anim_loop = true
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_jpt1o"]
+[sub_resource type="Gradient" id="Gradient_krqux"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_u6tio"]
+gradient = SubResource("Gradient_krqux")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_4sws3"]
 particle_flag_disable_z = true
-gravity = Vector3(0, 98, 0)
+gravity = Vector3(2.08165e-12, 50, 2.08165e-12)
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
-scale_max = 4.0
+scale_min = 0.0
+scale_max = 7.35
+color = Color(0.913725, 0, 0.188235, 1)
+color_ramp = SubResource("GradientTexture1D_u6tio")
 
 [node name="DeathSmoke" type="GPUParticles2D"]
-material = SubResource("CanvasItemMaterial_x4wya")
-position = Vector2(566, 724)
+material = SubResource("CanvasItemMaterial_i0jrs")
+position = Vector2(580, 638)
+scale = Vector2(5.5, 5.5)
 amount = 1
-process_material = SubResource("ParticleProcessMaterial_jpt1o")
-texture = ExtResource("1_lbnrr")
-speed_scale = 2.0
-trail_lifetime = 0.02
+process_material = SubResource("ParticleProcessMaterial_4sws3")
+texture = ExtResource("1_gn1va")
+speed_scale = 0.5
