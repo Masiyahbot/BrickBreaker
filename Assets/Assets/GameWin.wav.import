@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cbeklkobrht5a"
-path="res://.godot/imported/BrickHit.wav-de61e77ac891224af681ebbb30a0bb05.sample"
+uid="uid://ciruvni3r72k3"
+path="res://.godot/imported/GameWin.wav-0554fe88f662689a2af903bee30a8e83.sample"
 
 [deps]
 
-source_file="res://Assets/BrickHit.wav"
-dest_files=["res://.godot/imported/BrickHit.wav-de61e77ac891224af681ebbb30a0bb05.sample"]
+source_file="res://Assets/Assets/GameWin.wav"
+dest_files=["res://.godot/imported/GameWin.wav-0554fe88f662689a2af903bee30a8e83.sample"]
 
 [params]
 

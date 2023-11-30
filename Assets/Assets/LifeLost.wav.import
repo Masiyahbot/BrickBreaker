@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://wteog7wbeowr"
-path="res://.godot/imported/GameLost.wav-710b763500b3dd2204cf164c539312d6.sample"
+uid="uid://d08ti33hvwvrn"
+path="res://.godot/imported/LifeLost.wav-85a95881a2f7c9d97125dd0acd1e11ad.sample"
 
 [deps]
 
-source_file="res://Assets/GameLost.wav"
-dest_files=["res://.godot/imported/GameLost.wav-710b763500b3dd2204cf164c539312d6.sample"]
+source_file="res://Assets/Assets/LifeLost.wav"
+dest_files=["res://.godot/imported/LifeLost.wav-85a95881a2f7c9d97125dd0acd1e11ad.sample"]
 
 [params]
 

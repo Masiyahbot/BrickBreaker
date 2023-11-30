@@ -2,13 +2,13 @@
 
 importer="wav"
 type="AudioStreamWAV"
-uid="uid://cf5bph7bb6gox"
-path="res://.godot/imported/LevelPassed.wav-9f3185394bc208831a153320fce1aec0.sample"
+uid="uid://c7n8nt42wn3te"
+path="res://.godot/imported/WallHit.wav-01a779c7e4093721236585e687ecef64.sample"
 
 [deps]
 
-source_file="res://Assets/LevelPassed.wav"
-dest_files=["res://.godot/imported/LevelPassed.wav-9f3185394bc208831a153320fce1aec0.sample"]
+source_file="res://Assets/Assets/WallHit.wav"
+dest_files=["res://.godot/imported/WallHit.wav-01a779c7e4093721236585e687ecef64.sample"]
 
 [params]
 

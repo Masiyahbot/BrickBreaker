@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://ball.gd" id="1_kogqk"]
 [ext_resource type="Texture2D" uid="uid://c8l7ke1ygg27h" path="res://Assets/Assets/Ball.png" id="2_g310x"]
-[ext_resource type="AudioStream" uid="uid://c7n8nt42wn3te" path="res://Assets/WallHit.wav" id="3_4exji"]
-[ext_resource type="AudioStream" uid="uid://cbeklkobrht5a" path="res://Assets/BrickHit.wav" id="3_ha4c4"]
-[ext_resource type="AudioStream" uid="uid://c12xmj5kjhite" path="res://Assets/PaddleHit.wav" id="5_o04c3"]
+[ext_resource type="AudioStream" uid="uid://c7n8nt42wn3te" path="res://Assets/Assets/WallHit.wav" id="3_h7ux0"]
+[ext_resource type="AudioStream" uid="uid://c12xmj5kjhite" path="res://Assets/Assets/PaddleHit.wav" id="4_r3p2f"]
+[ext_resource type="AudioStream" uid="uid://cbeklkobrht5a" path="res://Assets/Assets/BrickHit.wav" id="5_w65yj"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_mata0"]
 radius = 30.4631
@@ -21,12 +21,12 @@ texture = ExtResource("2_g310x")
 shape = SubResource("CircleShape2D_mata0")
 
 [node name="WallHit" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_4exji")
+stream = ExtResource("3_h7ux0")
 
 [node name="PaddleHit" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_o04c3")
+stream = ExtResource("4_r3p2f")
 
 [node name="BrickHit" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_ha4c4")
+stream = ExtResource("5_w65yj")
 
 [node name="BGM2" type="AudioStreamPlayer" parent="."]
