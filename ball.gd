@@ -40,7 +40,6 @@ func _physics_process(delta):
 		
 	if (collider is Brick or collider is Paddle):
 		ball_collision(collider)
-		brick_explosion.emitting = true
 	else:
 		velocity = velocity.bounce(collision.get_normal())
 	

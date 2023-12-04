@@ -8,6 +8,7 @@ var level = 1
 
 @onready var sprite_2d = $Sprite2D
 @onready var collision_shape_2d = $CollisionShape2D
+@onready var particle = $BrickExplosion
 
 var sprites: Array[Texture2D] = [
 	preload("res://Assets/Assets/Brick-Yellow.png"),
@@ -39,6 +40,7 @@ func fade_out():
 	var tween = get_tree().create_tween()
 	tween.tween_property(sprite_2d, "modulate", Color.TRANSPARENT, .5)
 	tween.tween_callback(destroy)
+	particle.set_deferred("visible", true)
 	
 
 func destroy():

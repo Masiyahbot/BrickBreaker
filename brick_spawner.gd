@@ -8,6 +8,7 @@ const ROWS = 6
 @onready var ball = $"../Ball" as Ball
 @onready var ui = $"../UI" as UI
 
+
 @export var brick_scene: PackedScene
 @export var margin: Vector2 = Vector2(8,8)
 @export var spawn_start: Marker2D
@@ -72,5 +73,6 @@ func on_brick_destroyed():
 	if brick_count == 0:
 		ball.reset_ball()
 		ui.on_level_won()
+		
 	
 	
