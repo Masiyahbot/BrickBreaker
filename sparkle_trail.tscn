@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdv1dqepcilb5"]
+
+[ext_resource type="Texture2D" uid="uid://cjf1qierrsndq" path="res://Assets/star_01.png" id="1_qmuym"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8jwcs"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+
+[node name="SparkleTrail" type="GPUParticles2D"]
+position = Vector2(638, 327)
+process_material = SubResource("ParticleProcessMaterial_8jwcs")
+texture = ExtResource("1_qmuym")
