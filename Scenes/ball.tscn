@@ -1,0 +1,32 @@
+[gd_scene load_steps=7 format=3 uid="uid://cvjv2a1hm7gfd"]
+
+[ext_resource type="Script" path="res://Scripts/ball.gd" id="1_5r7p7"]
+[ext_resource type="Texture2D" uid="uid://c8l7ke1ygg27h" path="res://Assets/Ball.png" id="2_uvxwl"]
+[ext_resource type="AudioStream" uid="uid://c7n8nt42wn3te" path="res://Assets/WallHit.wav" id="3_ydj7g"]
+[ext_resource type="AudioStream" uid="uid://c12xmj5kjhite" path="res://Assets/PaddleHit.wav" id="4_nhtg6"]
+[ext_resource type="AudioStream" uid="uid://cbeklkobrht5a" path="res://Assets/BrickHit.wav" id="5_qdp0b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mata0"]
+radius = 30.4631
+
+[node name="Ball" type="CharacterBody2D"]
+scale = Vector2(0.25, 0.25)
+motion_mode = 1
+script = ExtResource("1_5r7p7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_uvxwl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mata0")
+
+[node name="WallHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ydj7g")
+
+[node name="PaddleHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_nhtg6")
+
+[node name="BrickHit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_qdp0b")
+
+[node name="BGM2" type="AudioStreamPlayer" parent="."]

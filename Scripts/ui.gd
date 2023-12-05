@@ -22,8 +22,9 @@ func on_level_won():
 	level_won_container.show()
 	
 func on_game_won():
-	game_won.show()
 	$GameWon.play()
+	game_won.show()
+	
 	
 
 	
