@@ -10,7 +10,7 @@ particles_anim_loop = true
 
 [sub_resource type="Gradient" id="Gradient_km32c"]
 offsets = PackedFloat32Array(0.5, 1)
-colors = PackedColorArray(0.496695, 0.874341, 0.237889, 1, 1, 1, 1, 1)
+colors = PackedColorArray(0.995017, 0, 0.299602, 1, 1, 1, 1, 1)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_xilgq"]
 gradient = SubResource("Gradient_km32c")
@@ -22,7 +22,7 @@ orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
 scale_min = 0.2
 scale_max = 0.5
-color = Color(0.701961, 0.788235, 0.462745, 1)
+color = Color(0.678431, 0.721569, 0.996078, 1)
 color_ramp = SubResource("GradientTexture1D_xilgq")
 sub_emitter_mode = 3
 sub_emitter_amount_at_collision = 1
@@ -31,6 +31,6 @@ sub_emitter_amount_at_collision = 1
 material = SubResource("CanvasItemMaterial_ml8aw")
 use_parent_material = true
 position = Vector2(547, 331)
-amount = 1
+amount = 2
 process_material = SubResource("ParticleProcessMaterial_55kci")
 texture = ExtResource("1_1tjys")

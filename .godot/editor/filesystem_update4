@@ -7,6 +7,3 @@ res://ui.tscn
 res://Scenes/brick.tscn
 res://death_smoke.tscn
 res://brick_explosion.tscn
-res://ball.gd
-res://brick_spawner.gd
-res://Scenes/brick.gd
