@@ -5,8 +5,6 @@ res://Scenes/death_zone.tscn
 res://Scenes/ui.tscn
 res://Scenes/brick.tscn
 res://Scenes/main.tscn
-res://Scripts/ball.gd
-res://Scripts/brick.gd
-res://gpu_particles_2d.tscn
 res://brick_explosion.tscn
 res://sparkle_trail.tscn
+res://death_smoke.tscn

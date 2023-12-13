@@ -1,11 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://ciiuqpi3fwa3c"]
+[gd_scene load_steps=12 format=3 uid="uid://ciiuqpi3fwa3c"]
 
 [ext_resource type="PackedScene" uid="uid://b7ebpynx4dase" path="res://Scenes/paddle.tscn" id="1_5ieia"]
 [ext_resource type="PackedScene" uid="uid://bickn2dgve6m8" path="res://Scenes/ui.tscn" id="1_06ouj"]
 [ext_resource type="PackedScene" uid="uid://cvjv2a1hm7gfd" path="res://Scenes/ball.tscn" id="2_806le"]
 [ext_resource type="PackedScene" uid="uid://cxi6a1f51fa7d" path="res://Scenes/wall.tscn" id="3_rnhv4"]
+[ext_resource type="PackedScene" uid="uid://cdv1dqepcilb5" path="res://sparkle_trail.tscn" id="4_4mfcd"]
 [ext_resource type="PackedScene" uid="uid://c24l67qdd3dsb" path="res://Scenes/death_zone.tscn" id="4_qb2db"]
 [ext_resource type="Script" path="res://Scripts/brick_spawner.gd" id="6_t4xui"]
+[ext_resource type="PackedScene" uid="uid://bu5lqyjj0j5d7" path="res://death_smoke.tscn" id="7_iv6oh"]
 [ext_resource type="PackedScene" uid="uid://c4cawtvjv0bgv" path="res://Scenes/brick.tscn" id="7_m4xgj"]
 
 [sub_resource type="OggPacketSequence" id="OggPacketSequence_yw773"]
@@ -36,6 +38,10 @@ collision_mask = 14
 death_zone = NodePath("../DeathZone")
 ui = NodePath("../UI")
 
+[node name="SparkleTrail" parent="Ball" instance=ExtResource("4_4mfcd")]
+position = Vector2(8, 4)
+scale = Vector2(-0.03679, -0.146721)
+
 [node name="Walls" type="Node" parent="."]
 
 [node name="UpperWall" parent="Walls" instance=ExtResource("3_rnhv4")]
@@ -54,6 +60,9 @@ collision_layer = 4
 
 [node name="DeathZone" parent="." instance=ExtResource("4_qb2db")]
 position = Vector2(-4, 357)
+
+[node name="DeathSmoke" parent="DeathZone" instance=ExtResource("7_iv6oh")]
+position = Vector2(73, -148)
 
 [node name="BrickSpawner" type="Node" parent="." node_paths=PackedStringArray("spawn_start")]
 script = ExtResource("6_t4xui")

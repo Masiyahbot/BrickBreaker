@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu5lqyjj0j5d7"]
+
+[ext_resource type="Texture2D" uid="uid://btxuibgy6c126" path="res://Assets/smoke_08.png" id="1_vqeki"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ps0hj"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+scale_min = 2.5
+scale_max = 2.5
+color = Color(0.878431, 0, 0.219608, 1)
+
+[node name="DeathSmoke" type="GPUParticles2D"]
+position = Vector2(540, 804)
+scale = Vector2(7.19581, 0.384772)
+amount = 1
+process_material = SubResource("ParticleProcessMaterial_ps0hj")
+texture = ExtResource("1_vqeki")

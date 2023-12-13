@@ -7,8 +7,12 @@ particle_flag_disable_z = true
 gravity = Vector3(0, 98, 0)
 orbit_velocity_min = 0.0
 orbit_velocity_max = 0.0
+scale_min = 0.2
+scale_max = 0.2
 
 [node name="SparkleTrail" type="GPUParticles2D"]
 position = Vector2(638, 327)
+scale = Vector2(-3.32, 1)
+amount = 5
 process_material = SubResource("ParticleProcessMaterial_8jwcs")
 texture = ExtResource("1_qmuym")

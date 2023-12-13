@@ -1,9 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1701819937
+::res://::1702498047
 BGM2.ogg::AudioStreamOggVorbis::7033755686693032716::1701386034::1701386035::1::::<><>::
+brick_explosion.tscn::PackedScene::8506037576997765642::1702338611::0::1::::<><>::uid://btxuibgy6c126::::res://Assets/smoke_08.png
+death_smoke.tscn::PackedScene::3852826623604810422::1702338611::0::1::::<><>::uid://btxuibgy6c126::::res://Assets/smoke_08.png
 icon.svg::CompressedTexture2D::3957293083198907292::1700178334::1700178334::1::::<><>::
-brick_explosion.tscn::PackedScene::8506037576997765642::1701819937::0::1::::<><>::res://Assets/smoke_08.png
-::res://Assets/::1701819965
+sparkle_trail.tscn::PackedScene::5028344677566548524::1702338611::0::1::::<><>::uid://cjf1qierrsndq::::res://Assets/star_01.png
+::res://Assets/::1701989986
 Ball.png::CompressedTexture2D::7113742415800555843::1700178334::1701736056::1::::<><>::
 Brick-Blue.png::CompressedTexture2D::8979348304139843021::1700178334::1701736056::1::::<><>::
 Brick-Gray.png::CompressedTexture2D::8342798054112985360::1700178334::1701736056::1::::<><>::
@@ -19,23 +21,24 @@ Level Passed.wav::AudioStreamWAV::1978307729878005629::1701384693::1701736056::1
 LifeLost.wav::AudioStreamWAV::8983277031383215619::1700178334::1701736056::1::::<><>::
 Paddle.png::CompressedTexture2D::5477542658004981000::1700178334::1701736056::1::::<><>::
 PaddleHit.wav::AudioStreamWAV::6654907941216095538::1700178334::1701736056::1::::<><>::
-smoke_08.png::CompressedTexture2D::-1::1701819901::1701819840::1::::<><>::
+smoke_08 (1).png::CompressedTexture2D::3730596720672591593::1701989985::1701989986::1::::<><>::
+smoke_08.png::CompressedTexture2D::3768718090289822493::1701819901::1701819840::1::::<><>::
 star_01.png::CompressedTexture2D::5416470490575060202::1701819965::1701819965::1::::<><>::
 VT323-Regular.ttf::FontFile::4453843302194638347::1700178334::1701736056::1::::<><>::
 WallHit.wav::AudioStreamWAV::7047749194687753058::1700178334::1701736056::1::::<><>::
-::res://Scenes/::1701819821
-ball.tscn::PackedScene::6266709797355211749::1701818589::0::1::::<><>::res://Scripts/ball.gd<>uid://c8l7ke1ygg27h::::res://Assets/Ball.png<>uid://c7n8nt42wn3te::::res://Assets/WallHit.wav<>uid://c12xmj5kjhite::::res://Assets/PaddleHit.wav<>uid://cbeklkobrht5a::::res://Assets/BrickHit.wav
-brick.tscn::PackedScene::6812486906685679837::1701818589::0::1::::<><>::res://Scripts/brick.gd<>uid://d06ws4g0pu0q0::::res://Assets/Brick-Blue.png
-death_zone.tscn::PackedScene::6728532052617788001::1701818589::0::1::::<><>::res://Scripts/death_zone.gd<>uid://d08ti33hvwvrn::::res://Assets/LifeLost.wav
-main.tscn::PackedScene::5352110852569173690::1701819821::0::1::::<><>::uid://b7ebpynx4dase::::res://Scenes/paddle.tscn<>uid://bickn2dgve6m8::::res://Scenes/ui.tscn<>uid://cvjv2a1hm7gfd::::res://Scenes/ball.tscn<>uid://cxi6a1f51fa7d::::res://Scenes/wall.tscn<>uid://c24l67qdd3dsb::::res://Scenes/death_zone.tscn<>res://Scripts/brick_spawner.gd<>uid://c4cawtvjv0bgv::::res://Scenes/brick.tscn
-paddle.tscn::PackedScene::4640809976754464240::1701818589::0::1::::<><>::res://Scripts/paddle.gd<>uid://ckbmlemetbql1::::res://Assets/Paddle.png
-ui.tscn::PackedScene::2952691996619644197::1701818589::0::1::::<><>::res://Scripts/ui.gd<>uid://b4pqfbvte11k6::::res://Assets/VT323-Regular.ttf<>uid://bs8dmfy2jogvn::::res://Assets/GameLost.wav<>uid://ciruvni3r72k3::::res://Assets/GameWin.wav<>uid://3gko62lj04pt::::res://Assets/Level Passed.wav
-wall.tscn::PackedScene::6405583394598316427::1701818589::0::1::::<><>::
-::res://Scripts/::1701819821
-ball.gd::GDScript::-1::1701819821::0::1::::Ball<>CharacterBody2D<>::
-brick.gd::GDScript::-1::1701819821::0::1::::Brick<>RigidBody2D<>::
+::res://Scenes/::1702338611
+ball.tscn::PackedScene::6266709797355211749::1702338611::0::1::::<><>::res://Scripts/ball.gd<>uid://c8l7ke1ygg27h::::res://Assets/Ball.png<>uid://c7n8nt42wn3te::::res://Assets/WallHit.wav<>uid://c12xmj5kjhite::::res://Assets/PaddleHit.wav<>uid://cbeklkobrht5a::::res://Assets/BrickHit.wav
+brick.tscn::PackedScene::6812486906685679837::1702338611::0::1::::<><>::res://Scripts/brick.gd<>uid://d06ws4g0pu0q0::::res://Assets/Brick-Blue.png<>uid://dtgngw0kkol3w::::res://brick_explosion.tscn
+death_zone.tscn::PackedScene::6728532052617788001::1702338611::0::1::::<><>::res://Scripts/death_zone.gd<>uid://d08ti33hvwvrn::::res://Assets/LifeLost.wav
+main.tscn::PackedScene::5352110852569173690::1702338611::0::1::::<><>::uid://b7ebpynx4dase::::res://Scenes/paddle.tscn<>uid://bickn2dgve6m8::::res://Scenes/ui.tscn<>uid://cvjv2a1hm7gfd::::res://Scenes/ball.tscn<>uid://cxi6a1f51fa7d::::res://Scenes/wall.tscn<>uid://cdv1dqepcilb5::::res://sparkle_trail.tscn<>uid://c24l67qdd3dsb::::res://Scenes/death_zone.tscn<>res://Scripts/brick_spawner.gd<>uid://bu5lqyjj0j5d7::::res://death_smoke.tscn<>uid://c4cawtvjv0bgv::::res://Scenes/brick.tscn
+paddle.tscn::PackedScene::4640809976754464240::1702338611::0::1::::<><>::res://Scripts/paddle.gd<>uid://ckbmlemetbql1::::res://Assets/Paddle.png
+ui.tscn::PackedScene::2952691996619644197::1702338611::0::1::::<><>::res://Scripts/ui.gd<>uid://b4pqfbvte11k6::::res://Assets/VT323-Regular.ttf<>uid://bs8dmfy2jogvn::::res://Assets/GameLost.wav<>uid://ciruvni3r72k3::::res://Assets/GameWin.wav<>uid://3gko62lj04pt::::res://Assets/Level Passed.wav
+wall.tscn::PackedScene::6405583394598316427::1702338611::0::1::::<><>::
+::res://Scripts/::1701990250
+ball.gd::GDScript::-1::1701990250::0::1::::Ball<>CharacterBody2D<>::
+brick.gd::GDScript::-1::1701989748::0::1::::Brick<>RigidBody2D<>::
 brick_spawner.gd::GDScript::-1::1701737123::0::1::::BrickSpawner<>Node<>::
-death_zone.gd::GDScript::-1::1700178334::0::1::::DeathZone<>Area2D<>::
-level_definitions.gd::GDScript::-1::1701293044::0::1::::<>Node<>::
+death_zone.gd::GDScript::-1::1701990147::0::1::::DeathZone<>Area2D<>::
+level_definitions.gd::GDScript::-1::1701989809::0::1::::<>Node<>::
 paddle.gd::GDScript::-1::1701291989::0::1::::Paddle<>RigidBody2D<>::
 ui.gd::GDScript::-1::1701732403::0::1::::UI<>CanvasLayer<>::
